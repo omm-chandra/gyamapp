@@ -1,0 +1,93 @@
+
+.Email_div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: black;
+    color: white;
+    justify-content: flex-start;
+    padding: 4rem 3rem;
+    align-items: center;
+}
+
+.txt_bd{
+    text-transform: uppercase;
+}
+
+.after{
+    background-color: #2fff4e;
+    width: 8.8rem;
+    height: 0.2rem;
+    border-radius: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.g_flex{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.bold{
+    text-transform: uppercase;
+}
+
+.Right_email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Right_email>div{
+    background-color: #242323e9;
+    padding: 1rem 1rem;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.email_btn{
+    background-color: #2fff4e;
+    padding: 0.3rem 0.5rem;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+}
+
+.email_btn:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 900px) {
+    .Email_div div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Email_div div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .Email_div{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Right_email div:nth-child(1){
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .Left_Email>span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

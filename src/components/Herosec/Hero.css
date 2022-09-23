@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: black;
+    color: white;
+}
+
+.Blur {
+    background-color: #2fff4ed7;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(212px);
+    z-index: -1;
+    width: 20rem;
+    height: 25rem;
+    top: 10rem;
+}
+
+.left_side {
+    flex: 3;
+}
+
+.right_side {
+    flex: 1;
+    background-color: #2fff4e;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.logo {
+    height: 5rem;
+}
+
+.nav_ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_ul li {
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.nav_ul li:hover {
+    color: #2fff4e;
+    cursor: pointer;
+}
+
+.menu_icon{
+    display: none;
+}
+
+.club_anime {
+    background-color: #242323e9;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.club_anime>div {
+    width: 5rem;
+    position: absolute;
+    height: 80%;
+    background-color: #2fff4e;
+    margin-top: -1px;
+    margin-left: -13px;
+    border-radius: 5rem;
+    z-index: 1;
+}
+
+.club_anime span {
+    z-index: 2;
+}
+
+.two_sp {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.two_sp>.text_bd {
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.single_line {
+    margin-left: 2rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.long_para {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 50%;
+}
+
+.main_num_txt_div {
+    margin-left: 2rem;
+    display: flex;
+    gap: 2rem;
+
+}
+
+.num_txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.num_txt>.Number {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.num_txt>.txt {
+    text-transform: uppercase;
+    margin: 0.2rem 0;
+    color: rgb(203, 196, 196);
+}
+
+.hero_btn {
+    display: flex;
+    margin: 2rem 2rem;
+    gap: 2rem;
+}
+
+.hero_btn>.bdr_btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid#2fff4e;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.hero_btn>.bdr_btn:hover {
+    background-color: #2fff4e;
+    color: black;
+    cursor: pointer;
+}
+
+.jnhrt_div {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    position: relative;
+    right: 2rem;
+    top: 1.5rem;
+}
+
+.join_div {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.Rate_div {
+    display: flex;
+    flex-direction: column;
+    background-color: #242323e9;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    top: 6rem;
+    left: 4rem;
+    cursor: pointer;
+}
+
+.heart {
+    height: 2rem;
+    width: 2rem;
+}
+
+.num_bpm {
+    font-size: 1.5rem;
+
+}
+
+.builder_img {
+    height: 35rem;
+    width: 34rem;
+    position: relative;
+    right: 20rem;
+    top: 6.2rem;
+}
+
+.graph_div {
+    display: flex;
+    flex-direction: row;
+    background-color: #242323e9;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    right: 38rem;
+    top: -1rem;
+    text-transform: capitalize;
+}
+
+.graph {
+    height: 5rem;
+    width: 5rem;
+}
+
+.calori_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .Header {
+        display: flex;
+
+    }
+
+    .builder_img {
+        right: 12rem;
+    }
+
+    .graph_div {
+        right: 27rem;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .Header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .right_side {
+        background: none;
+    }
+
+    .jnhrt_div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .Rate_div {
+        top: 0;
+        left: 0;
+    }
+
+    .builder_img {
+        right: -1rem;
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .graph_div {
+        right: -5rem;
+        font-size: medium;
+    }
+
+    .graph {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+   .club_anime{
+    z-index: 1;
+   } 
+
+    .builder_img {
+        right: 5rem;
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .menu_icon{
+        display: block;
+        font-size: 2rem;
+        position: relative;
+        top: 1.5rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+
+    .nav_ul{
+        display: none;
+    }
+
+    .active{
+        z-index: 2;
+        flex-direction: column;
+        background-color:#242323e9;
+        padding: 2rem 3rem;
+        border-radius: 0.5rem;
+        position: absolute;
+        right: 0;
+        top: 4rem;
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .active li {
+        text-transform: capitalize;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition: all 0.3s ease-in-out;
+        z-index: 2;
+    }
+    
+    .active li:hover {
+        color: #2fff4e;
+        cursor: pointer;
+    }
+
+    .hero_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 376px){
+    .two_sp > .text_bd{
+        font-size: 3rem;
+    }
+
+    .simple{
+        font-size: 3rem;
+    }
+
+    .builder_img{
+        right: 0;
+    }
+
+    .Rate_div{
+        position: relative;
+        left: 1.5rem;
+    }
+
+    .Rate_div>span:nth-child(1){
+        font-size: 0.9rem;
+    }
+
+    .heart{
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .num_bpm{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 321px){
+    .club_anime{
+        margin-left: 0.4rem;
+    }
+
+    .two_sp{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .two_sp > .text_bd{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .simple{
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .num_txt > .txt{
+        font-size: 0.8rem;
+    }
+
+    .num_txt > .Number{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .hero_btn{
+        display: flex;
+        flex-direction: column;
+    }
+
+} 

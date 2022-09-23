@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.testimonial{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:3rem 4rem ;
+}
+
+.testimonial_left{
+    gap: 1rem;
+}
+
+.r_flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.r_flex img{
+    width: 15rem;
+    height: 18rem;
+    margin-top: -17rem;
+}
+
+.r_flex:nth-child(1){
+    align-items: flex-end;
+    gap: 7rem;
+}
+
+.testi_icons{
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.testi_icons:hover{
+    color: #2fff4e;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.10);
+}
+
+.bd{
+    border:  2px solid #2fff4e;
+    width: 15rem;
+    height: 18rem;
+    margin-left: -2rem;
+}
+
+.testimonial_left p:nth-child(1){
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 1rem 0;
+    color: #2fff4e;
+}
+
+.para_text{
+    text-transform: capitalize;
+    margin: 1rem 0;
+    width: 70%;
+}
+
+.name_sts{
+    margin: 1.5rem 0;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.name_sts span:nth-child(1){
+    color: #2fff4e;
+}
+
+@media screen and (max-device-width: 640px){
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-device-width: 480px){
+    .r_flex img{
+        width: 14rem;
+        height: 17rem;
+    }
+
+    .bd{
+        width: 14rem;
+        height: 17rem;
+    }
+}
+
+@media screen and (max-device-width: 375px){
+    .bd{
+        width: 10rem;
+        height: 13rem;
+    }
+
+    .r_flex img{
+        width: 10rem;
+        height: 13rem;
+    }
+
+    .testimonial_left p:nth-child(1){
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txt_bd{
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bold{
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .para_text{
+        width: 100%;
+    }
+}
